@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滾動式一頁網站</title>
+
+    <!-- bootstroop css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            scroll-behavior: smooth;/*捲動滑動*/
+        }
+
+        #home {
+            background-image: url("./images/p0.jpg");
+
+        }
+
+        #news {
+            background-image: url("./images/p1.jpg");
+
+        }
+        #shops {
+            background-image: url("./images/p1.jpg");
+
+        }
+
+        #order {
+            background-image: url("./images/p2.jpg");
+
+        }
+
+        #us {
+            background-image: url("./images/p3.jpg");
+
+        }
+
+        section {
+            height: 100%;
+            padding-top: 150px;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            /*背景圖固定*/
+        }
+
+        .txt-bg {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .txt-bg h2 {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .txt-bg h2 i {
+            color: rgb(209, 166, 97);
+            margin-right: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 結構 -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- mr-auto 靠左對齊 預設值
+            ml-auto 靠右對齊
+            mx-auto 置中對齊 -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shops">附近商店</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#us">關於我們</a>
+                </li>
+                <!-- 搜尋欄 -->
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </ul>
+
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="txt-bg">
+                    <h2><i class="bi bi-house-heart"></i>首頁</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas a
+                        voluptate
+                        ipsam, suscipit error necessitatibus eum asperiores! Est, nam? Placeat cumque distinctio illo
+                        ullam
+                        aliquam? Eum est, ipsam quos laboriosam obcaecati adipisci animi culpa eius eaque qui molestias
+                        magnam, excepturi ad tempora quam, numquam quis nesciunt labore reiciendis itaque rerum harum
+                        nostrum non earum. Nihil dignissimos sequi voluptate qui, beatae veritatis ratione inventore
+                        dolorum
+                        voluptas aperiam doloremque ipsa culpa vero. Ipsa nobis corrupti ratione doloribus accusantium
+                        ea.
+                        Vero, vitae. Explicabo ipsam ipsa expedita repellat, recusandae voluptatibus dignissimos dolorum
+                        itaque quos sed officia voluptatum dicta suscipit repudiandae voluptates aut!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="txt-bg">
+                    <h2><i class="bi bi-flag-fill"></i>最新消息</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas a
+                        voluptate
+                        ipsam, suscipit error necessitatibus eum asperiores! Est, nam? Placeat cumque distinctio illo
+                        ullam
+                        aliquam? Eum est, ipsam quos laboriosam obcaecati adipisci animi culpa eius eaque qui molestias
+                        magnam, excepturi ad tempora quam, numquam quis nesciunt labore reiciendis itaque rerum harum
+                        nostrum non earum. Nihil dignissimos sequi voluptate qui, beatae veritatis ratione inventore
+                        dolorum
+                        voluptas aperiam doloremque ipsa culpa vero. Ipsa nobis corrupti ratione doloribus accusantium
+                        ea.
+                        Vero, vitae. Explicabo ipsam ipsa expedita repellat, recusandae voluptatibus dignissimos dolorum
+                        itaque quos sed officia voluptatum dicta suscipit repudiandae voluptates aut!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="shops">
+        <div class="container">
+            <div class="row">
+                <div class="txt-bg">
+                    <h2><i class="bi bi-bag-check-fill"></i>附近商店</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas a
+                        voluptate
+                        ipsam, suscipit error necessitatibus eum asperiores! Est, nam? Placeat cumque distinctio illo
+                        ullam
+                        aliquam? Eum est, ipsam quos laboriosam obcaecati adipisci animi culpa eius eaque qui molestias
+                        magnam, excepturi ad tempora quam, numquam quis nesciunt labore reiciendis itaque rerum harum
+                        nostrum non earum. Nihil dignissimos sequi voluptate qui, beatae veritatis ratione inventore
+                        dolorum
+                        voluptas aperiam doloremque ipsa culpa vero. Ipsa nobis corrupti ratione doloribus accusantium
+                        ea.
+                        Vero, vitae. Explicabo ipsam ipsa expedita repellat, recusandae voluptatibus dignissimos dolorum
+                        itaque quos sed officia voluptatum dicta suscipit repudiandae voluptates aut!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="us">
+        <div class="container">
+            <div class="row">
+                <div class="txt-bg">
+                    <h2><i class="bi bi-person-circle"></i>關於我們</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus possimus voluptas a
+                        voluptate
+                        ipsam, suscipit error necessitatibus eum asperiores! Est, nam? Placeat cumque distinctio illo
+                        ullam
+                        aliquam? Eum est, ipsam quos laboriosam obcaecati adipisci animi culpa eius eaque qui molestias
+                        magnam, excepturi ad tempora quam, numquam quis nesciunt labore reiciendis itaque rerum harum
+                        nostrum non earum. Nihil dignissimos sequi voluptate qui, beatae veritatis ratione inventore
+                        dolorum
+                        voluptas aperiam doloremque ipsa culpa vero. Ipsa nobis corrupti ratione doloribus accusantium
+                        ea.
+                        Vero, vitae. Explicabo ipsam ipsa expedita repellat, recusandae voluptatibus dignissimos dolorum
+                        itaque quos sed officia voluptatum dicta suscipit repudiandae voluptates aut!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    
+
+    
+
+</body>
+
+</html>
